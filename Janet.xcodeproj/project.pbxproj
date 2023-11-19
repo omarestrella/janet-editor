@@ -13,10 +13,33 @@
 		668603112894C256004D61CD /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603102894C256004D61CD /* Tests_macOSLaunchTests.swift */; };
 		668603122894C256004D61CD /* JanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EA2894C254004D61CD /* JanetApp.swift */; };
 		668603132894C256004D61CD /* JanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EA2894C254004D61CD /* JanetApp.swift */; };
-		668603142894C256004D61CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* ContentView.swift */; };
-		668603152894C256004D61CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* ContentView.swift */; };
+		668603142894C256004D61CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* MainView.swift */; };
+		668603152894C256004D61CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* MainView.swift */; };
 		668603162894C256004D61CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668602EC2894C256004D61CD /* Assets.xcassets */; };
 		668603172894C256004D61CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668602EC2894C256004D61CD /* Assets.xcassets */; };
+		668603342894C3D9004D61CD /* JanetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603332894C3D9004D61CD /* JanetVM.swift */; };
+		668603352894C3D9004D61CD /* JanetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603332894C3D9004D61CD /* JanetVM.swift */; };
+		66C52185289764D200A84EFC /* janet.c in Sources */ = {isa = PBXBuildFile; fileRef = 66C52184289764D200A84EFC /* janet.c */; };
+		66C52186289764D200A84EFC /* janet.c in Sources */ = {isa = PBXBuildFile; fileRef = 66C52184289764D200A84EFC /* janet.c */; };
+		66CAA3F02B084B0C00A74904 /* Runestone in Frameworks */ = {isa = PBXBuildFile; productRef = 66CAA3EF2B084B0C00A74904 /* Runestone */; };
+		66CAA3F32B084B6100A74904 /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 66CAA3F22B084B6100A74904 /* Disk */; };
+		66CAA3F62B084B7B00A74904 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA3F52B084B7B00A74904 /* FileManager.swift */; };
+		66CAA3F82B084BCA00A74904 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA3F72B084BCA00A74904 /* AppModel.swift */; };
+		66CAA3FB2B084CBE00A74904 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA3FA2B084CBE00A74904 /* EditorView.swift */; };
+		66CAA3FE2B084D0E00A74904 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA3FD2B084D0E00A74904 /* Query.swift */; };
+		66CAA4022B084DDB00A74904 /* highlights.scm in Resources */ = {isa = PBXBuildFile; fileRef = 66CAA4002B084DDB00A74904 /* highlights.scm */; };
+		66CAA4032B084DDB00A74904 /* locals.scm in Resources */ = {isa = PBXBuildFile; fileRef = 66CAA4012B084DDB00A74904 /* locals.scm */; };
+		66CAA40D2B084DE400A74904 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4052B084DE400A74904 /* scanner.c */; };
+		66CAA40E2B084DE400A74904 /* node-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CAA4072B084DE400A74904 /* node-types.json */; };
+		66CAA40F2B084DE400A74904 /* grammar.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CAA40B2B084DE400A74904 /* grammar.json */; };
+		66CAA4102B084DE400A74904 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA40C2B084DE400A74904 /* parser.c */; };
+		66CAA42E2B084E1300A74904 /* TomorrowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4292B084E1300A74904 /* TomorrowTheme.swift */; };
+		66CAA42F2B084E1300A74904 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA42A2B084E1300A74904 /* Base.swift */; };
+		66CAA4302B084E1300A74904 /* PlainTextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA42B2B084E1300A74904 /* PlainTextTheme.swift */; };
+		66CAA4322B084E5A00A74904 /* HighlightName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4312B084E5A00A74904 /* HighlightName.swift */; };
+		66CAA4342B08506F00A74904 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4332B08506F00A74904 /* FileListView.swift */; };
+		66DC9D022B06E77100D6954A /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 66DC9D012B06E77100D6954A /* SwiftTerm */; };
+		66DC9D042B06E77500D6954A /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 66DC9D032B06E77500D6954A /* SwiftTerm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		668602EA2894C254004D61CD /* JanetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetApp.swift; sourceTree = "<group>"; };
-		668602EB2894C254004D61CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		668602EB2894C254004D61CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		668602EC2894C256004D61CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668602F12894C256004D61CD /* Janet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668602F72894C256004D61CD /* Janet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +72,29 @@
 		6686030A2894C256004D61CD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6686030E2894C256004D61CD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		668603102894C256004D61CD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		668603292894C39D004D61CD /* ios-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-bridging-header.h"; sourceTree = "<group>"; };
+		6686032A2894C39D004D61CD /* mac-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mac-bridging-header.h"; sourceTree = "<group>"; };
+		6686032B2894C39E004D61CD /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
+		6686032C2894C39E004D61CD /* janet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = janet.h; sourceTree = "<group>"; };
+		668603332894C3D9004D61CD /* JanetVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanetVM.swift; sourceTree = "<group>"; };
+		66C52184289764D200A84EFC /* janet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = janet.c; sourceTree = "<group>"; };
+		66CAA3F52B084B7B00A74904 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		66CAA3F72B084BCA00A74904 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		66CAA3FA2B084CBE00A74904 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		66CAA3FD2B084D0E00A74904 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		66CAA4002B084DDB00A74904 /* highlights.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = highlights.scm; sourceTree = "<group>"; };
+		66CAA4012B084DDB00A74904 /* locals.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = locals.scm; sourceTree = "<group>"; };
+		66CAA4052B084DE400A74904 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		66CAA4072B084DE400A74904 /* node-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "node-types.json"; sourceTree = "<group>"; };
+		66CAA4082B084DE400A74904 /* public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
+		66CAA40A2B084DE400A74904 /* tree_sitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree_sitter.h; sourceTree = "<group>"; };
+		66CAA40B2B084DE400A74904 /* grammar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grammar.json; sourceTree = "<group>"; };
+		66CAA40C2B084DE400A74904 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		66CAA4292B084E1300A74904 /* TomorrowTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomorrowTheme.swift; sourceTree = "<group>"; };
+		66CAA42A2B084E1300A74904 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		66CAA42B2B084E1300A74904 /* PlainTextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextTheme.swift; sourceTree = "<group>"; };
+		66CAA4312B084E5A00A74904 /* HighlightName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightName.swift; sourceTree = "<group>"; };
+		66CAA4332B08506F00A74904 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CAA3F02B084B0C00A74904 /* Runestone in Frameworks */,
+				66CAA3F32B084B6100A74904 /* Disk in Frameworks */,
+				66DC9D022B06E77100D6954A /* SwiftTerm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DC9D042B06E77500D6954A /* SwiftTerm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,20 +136,28 @@
 		668602E42894C254004D61CD = {
 			isa = PBXGroup;
 			children = (
+				668603292894C39D004D61CD /* ios-bridging-header.h */,
+				6686032A2894C39D004D61CD /* mac-bridging-header.h */,
+				66CAA3FC2B084CF100A74904 /* TreeSitter */,
+				668603262894C361004D61CD /* Janet */,
 				668602E92894C254004D61CD /* Shared */,
 				668602F82894C256004D61CD /* macOS */,
 				668603012894C256004D61CD /* Tests iOS */,
 				6686030D2894C256004D61CD /* Tests macOS */,
 				668602F22894C256004D61CD /* Products */,
+				66DC9D002B06E77100D6954A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		668602E92894C254004D61CD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				66CAA3F92B084C7400A74904 /* Editor */,
+				66CAA3F42B084B6F00A74904 /* Data */,
 				668602EA2894C254004D61CD /* JanetApp.swift */,
-				668602EB2894C254004D61CD /* ContentView.swift */,
+				668602EB2894C254004D61CD /* MainView.swift */,
 				668602EC2894C256004D61CD /* Assets.xcassets */,
+				66CAA4332B08506F00A74904 /* FileListView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -141,6 +199,109 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		668603262894C361004D61CD /* Janet */ = {
+			isa = PBXGroup;
+			children = (
+				668603322894C3D0004D61CD /* Bridge */,
+				668603282894C392004D61CD /* Sources */,
+			);
+			path = Janet;
+			sourceTree = "<group>";
+		};
+		668603282894C392004D61CD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66C52184289764D200A84EFC /* janet.c */,
+				6686032C2894C39E004D61CD /* janet.h */,
+				6686032B2894C39E004D61CD /* shell.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		668603322894C3D0004D61CD /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				668603332894C3D9004D61CD /* JanetVM.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		66CAA3F42B084B6F00A74904 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA3F52B084B7B00A74904 /* FileManager.swift */,
+				66CAA3F72B084BCA00A74904 /* AppModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		66CAA3F92B084C7400A74904 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA4262B084E1300A74904 /* Themes */,
+				66CAA3FA2B084CBE00A74904 /* EditorView.swift */,
+				66CAA4312B084E5A00A74904 /* HighlightName.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		66CAA3FC2B084CF100A74904 /* TreeSitter */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA4042B084DE400A74904 /* Sources */,
+				66CAA3FF2B084D6400A74904 /* Queries */,
+				66CAA3FD2B084D0E00A74904 /* Query.swift */,
+			);
+			path = TreeSitter;
+			sourceTree = "<group>";
+		};
+		66CAA3FF2B084D6400A74904 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA4002B084DDB00A74904 /* highlights.scm */,
+				66CAA4012B084DDB00A74904 /* locals.scm */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		66CAA4042B084DE400A74904 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA4052B084DE400A74904 /* scanner.c */,
+				66CAA4072B084DE400A74904 /* node-types.json */,
+				66CAA4082B084DE400A74904 /* public.h */,
+				66CAA4092B084DE400A74904 /* tree_sitter */,
+				66CAA40B2B084DE400A74904 /* grammar.json */,
+				66CAA40C2B084DE400A74904 /* parser.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		66CAA4092B084DE400A74904 /* tree_sitter */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA40A2B084DE400A74904 /* tree_sitter.h */,
+			);
+			path = tree_sitter;
+			sourceTree = "<group>";
+		};
+		66CAA4262B084E1300A74904 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				66CAA4292B084E1300A74904 /* TomorrowTheme.swift */,
+				66CAA42A2B084E1300A74904 /* Base.swift */,
+				66CAA42B2B084E1300A74904 /* PlainTextTheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		66DC9D002B06E77100D6954A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +318,11 @@
 			dependencies = (
 			);
 			name = "Janet (iOS)";
+			packageProductDependencies = (
+				66DC9D012B06E77100D6954A /* SwiftTerm */,
+				66CAA3EF2B084B0C00A74904 /* Runestone */,
+				66CAA3F22B084B6100A74904 /* Disk */,
+			);
 			productName = "Janet (iOS)";
 			productReference = 668602F12894C256004D61CD /* Janet.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +340,9 @@
 			dependencies = (
 			);
 			name = "Janet (macOS)";
+			packageProductDependencies = (
+				66DC9D032B06E77500D6954A /* SwiftTerm */,
+			);
 			productName = "Janet (macOS)";
 			productReference = 668602F72894C256004D61CD /* Janet.app */;
 			productType = "com.apple.product-type.application";
@@ -226,9 +395,11 @@
 				TargetAttributes = {
 					668602F02894C256004D61CD = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					668602F62894C256004D61CD = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					668602FD2894C256004D61CD = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -249,6 +420,11 @@
 				Base,
 			);
 			mainGroup = 668602E42894C254004D61CD;
+			packageReferences = (
+				66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+				66CAA3EE2B084B0C00A74904 /* XCRemoteSwiftPackageReference "Runestone" */,
+				66CAA3F12B084B6100A74904 /* XCRemoteSwiftPackageReference "Disk" */,
+			);
 			productRefGroup = 668602F22894C256004D61CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +442,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CAA40F2B084DE400A74904 /* grammar.json in Resources */,
+				66CAA4022B084DDB00A74904 /* highlights.scm in Resources */,
 				668603162894C256004D61CD /* Assets.xcassets in Resources */,
+				66CAA4032B084DDB00A74904 /* locals.scm in Resources */,
+				66CAA40E2B084DE400A74904 /* node-types.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +479,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668603142894C256004D61CD /* ContentView.swift in Sources */,
+				66CAA4342B08506F00A74904 /* FileListView.swift in Sources */,
+				66CAA40D2B084DE400A74904 /* scanner.c in Sources */,
+				66CAA4102B084DE400A74904 /* parser.c in Sources */,
+				66C52185289764D200A84EFC /* janet.c in Sources */,
+				66CAA4302B084E1300A74904 /* PlainTextTheme.swift in Sources */,
+				66CAA3F62B084B7B00A74904 /* FileManager.swift in Sources */,
+				668603142894C256004D61CD /* MainView.swift in Sources */,
+				66CAA4322B084E5A00A74904 /* HighlightName.swift in Sources */,
+				66CAA3FB2B084CBE00A74904 /* EditorView.swift in Sources */,
+				66CAA3FE2B084D0E00A74904 /* Query.swift in Sources */,
+				66CAA3F82B084BCA00A74904 /* AppModel.swift in Sources */,
+				66CAA42E2B084E1300A74904 /* TomorrowTheme.swift in Sources */,
 				668603122894C256004D61CD /* JanetApp.swift in Sources */,
+				66CAA42F2B084E1300A74904 /* Base.swift in Sources */,
+				668603342894C3D9004D61CD /* JanetVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +501,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668603152894C256004D61CD /* ContentView.swift in Sources */,
+				66C52186289764D200A84EFC /* janet.c in Sources */,
+				668603152894C256004D61CD /* MainView.swift in Sources */,
 				668603132894C256004D61CD /* JanetApp.swift in Sources */,
+				668603352894C3D9004D61CD /* JanetVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
@@ -471,7 +667,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +677,8 @@
 				PRODUCT_NAME = Janet;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-bridging-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +689,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
@@ -501,7 +700,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +710,7 @@
 				PRODUCT_NAME = Janet;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -522,6 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -541,6 +742,8 @@
 				PRODUCT_NAME = Janet;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Janet/mac-bridging-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -550,6 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -569,6 +773,7 @@
 				PRODUCT_NAME = Janet;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Janet/mac-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -701,6 +906,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66CAA3EE2B084B0C00A74904 /* XCRemoteSwiftPackageReference "Runestone" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonbs/Runestone";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+		66CAA3F12B084B6100A74904 /* XCRemoteSwiftPackageReference "Disk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/saoudrizwan/Disk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
+		66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66CAA3EF2B084B0C00A74904 /* Runestone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66CAA3EE2B084B0C00A74904 /* XCRemoteSwiftPackageReference "Runestone" */;
+			productName = Runestone;
+		};
+		66CAA3F22B084B6100A74904 /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66CAA3F12B084B6100A74904 /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+		66DC9D012B06E77100D6954A /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		66DC9D032B06E77500D6954A /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 668602E52894C254004D61CD /* Project object */;
 }
