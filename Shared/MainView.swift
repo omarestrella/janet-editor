@@ -6,41 +6,79 @@
 //
 
 import SwiftUI
+import ObjectiveC
+
 
 struct MainView: View {
-  @State var text: String
-
   @EnvironmentObject var appModel: AppModel
+  
+  @State var showAlert = false
 
   var body: some View {
-    NavigationSplitView {
-      FileListView()
-        .navigationTitle("Files")
-    } detail: {
-      if let file = appModel.activeFile {
-        VStack {
-          EditorView(file: file)
-            .navigationTitle(Text("df"))
-            .navigationBarTitleDisplayMode(.inline)
-          
-          VStack {
-            ForEach(Array(zip($appModel.results.indices, $appModel.results)), id: \.0) { result in
-              Text(String(describing: result.1.wrappedValue))
+    NavigationSplitView(sidebar: {
+      FileListView().padding(.all)
+    }, detail: {
+      if let document = appModel.activeDocument {
+        EditorView(document: document)
+          .navigationTitle(title)
+          .navigationBarTitleDisplayMode(.inline)
+          .toolbar(id: "editor-toolbar", content: {
+            ToolbarItem(id: "run-code", placement: .primaryAction) {
+              Button("run", systemImage: "play.fill", action: {
+                let result = appModel.runCode(code: document.contents)
+                print("\(String(describing: result))")
+              })
             }
-          }.frame(maxHeight: 100)
-        }
+          }).toolbarRole(.editor)
       } else {
-        Text("Select a file...")
+        Text("Pick a file...")
       }
+    })
+    .onAppear {
+      appModel.runtime.registerFunction(AlertFunction())
     }
-    .navigationSplitViewColumnWidth(min: 150, ideal: 150, max: 150)
+//    .alert(alertHandler.title, isPresented: $alertHandler.showAlert, actions: {
+//      Button("Ok", systemImage: "play", action: {
+//        alertHandler.showAlert = false
+//      })
+//    }, message: {
+//      Text(alertHandler.message)
+//    })
+//    .onAppear {
+//      appModel.runtime.registerFunction(name: "alert", documentation: "", fn: { argc, argv in
+//        janet_fixarity(argc, 2)
+//        
+//        let title = String(cString: janet_unwrap_string(argv![0]))
+//        let message = String(cString: janet_unwrap_string(argv![1]))
+//        
+//        AlertHandler.shared.title = title
+//        AlertHandler.shared.message = message
+//        AlertHandler.shared.showAlert = true
+//        
+//        return janet_wrap_nil()
+//      })
+//    }
+  }
+  
+  var title: String {
+    if let url = appModel.activeDocument?.url {
+      return url.deletingPathExtension().lastPathComponent
+    }
+    return "(No name)"
   }
 }
 
-#if DEBUG
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    MainView(text: "")
-  }
+#Preview {
+  MainView().environmentObject(AppModel(fileTree: [
+    FileTreeItem(name: "src", children: [
+      FileTreeItem(name: "main.janet", document: JanetDocument(contents: ""))
+    ]),
+    FileTreeItem(name: "scripts", children: [
+      FileTreeItem(name: "folder", children: [
+        FileTreeItem(name: "file.sh", document: JanetDocument(contents: ""))
+      ]),
+      FileTreeItem(name: "edit.sh", document: JanetDocument(contents: "")),
+      FileTreeItem(name: "publish.sh", document: JanetDocument(contents: ""))
+    ])
+  ]))
 }
-#endif

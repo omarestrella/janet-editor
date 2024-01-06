@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-
 @main
 struct JanetApp: App {
   @StateObject var appModel = AppModel()
-  
+
   var body: some Scene {
     WindowGroup {
-      MainView(text: "")
+      MainView()
+        .onAppear {
+          appModel.loadFiles()
+        }
     }
-      .environmentObject(appModel)
+    .environmentObject(appModel)
   }
 }

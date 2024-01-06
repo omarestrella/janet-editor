@@ -7,20 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665EB1732B4868AA004FF162 /* JanetFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665EB1722B4868AA004FF162 /* JanetFunction.swift */; };
+		665EB1752B486BC8004FF162 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665EB1742B486BC8004FF162 /* Alert.swift */; };
+		665EB1782B4877AF004FF162 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 665EB1772B4877AF004FF162 /* functions.c */; };
 		668603032894C256004D61CD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603022894C256004D61CD /* Tests_iOS.swift */; };
 		668603052894C256004D61CD /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603042894C256004D61CD /* Tests_iOSLaunchTests.swift */; };
-		6686030F2894C256004D61CD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686030E2894C256004D61CD /* Tests_macOS.swift */; };
-		668603112894C256004D61CD /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603102894C256004D61CD /* Tests_macOSLaunchTests.swift */; };
 		668603122894C256004D61CD /* JanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EA2894C254004D61CD /* JanetApp.swift */; };
-		668603132894C256004D61CD /* JanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EA2894C254004D61CD /* JanetApp.swift */; };
 		668603142894C256004D61CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* MainView.swift */; };
-		668603152894C256004D61CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668602EB2894C254004D61CD /* MainView.swift */; };
 		668603162894C256004D61CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668602EC2894C256004D61CD /* Assets.xcassets */; };
-		668603172894C256004D61CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668602EC2894C256004D61CD /* Assets.xcassets */; };
-		668603342894C3D9004D61CD /* JanetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603332894C3D9004D61CD /* JanetVM.swift */; };
-		668603352894C3D9004D61CD /* JanetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603332894C3D9004D61CD /* JanetVM.swift */; };
+		668603342894C3D9004D61CD /* JanetRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668603332894C3D9004D61CD /* JanetRuntime.swift */; };
+		668BFB8F2B139D4B00905F2C /* Janet--iOS--Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 668BFB8E2B139D4B00905F2C /* Janet--iOS--Info.plist */; };
 		66C52185289764D200A84EFC /* janet.c in Sources */ = {isa = PBXBuildFile; fileRef = 66C52184289764D200A84EFC /* janet.c */; };
-		66C52186289764D200A84EFC /* janet.c in Sources */ = {isa = PBXBuildFile; fileRef = 66C52184289764D200A84EFC /* janet.c */; };
 		66CAA3F02B084B0C00A74904 /* Runestone in Frameworks */ = {isa = PBXBuildFile; productRef = 66CAA3EF2B084B0C00A74904 /* Runestone */; };
 		66CAA3F32B084B6100A74904 /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 66CAA3F22B084B6100A74904 /* Disk */; };
 		66CAA3F62B084B7B00A74904 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA3F52B084B7B00A74904 /* FileManager.swift */; };
@@ -39,7 +36,6 @@
 		66CAA4322B084E5A00A74904 /* HighlightName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4312B084E5A00A74904 /* HighlightName.swift */; };
 		66CAA4342B08506F00A74904 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAA4332B08506F00A74904 /* FileListView.swift */; };
 		66DC9D022B06E77100D6954A /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 66DC9D012B06E77100D6954A /* SwiftTerm */; };
-		66DC9D042B06E77500D6954A /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 66DC9D032B06E77500D6954A /* SwiftTerm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,33 +46,29 @@
 			remoteGlobalIDString = 668602F02894C256004D61CD;
 			remoteInfo = "Janet (iOS)";
 		};
-		6686030B2894C256004D61CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 668602E52894C254004D61CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 668602F62894C256004D61CD;
-			remoteInfo = "Janet (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665EB1722B4868AA004FF162 /* JanetFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetFunction.swift; sourceTree = "<group>"; };
+		665EB1742B486BC8004FF162 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		665EB1762B4877AF004FF162 /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		665EB1772B4877AF004FF162 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 		668602EA2894C254004D61CD /* JanetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanetApp.swift; sourceTree = "<group>"; };
 		668602EB2894C254004D61CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		668602EC2894C256004D61CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668602F12894C256004D61CD /* Janet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		668602F72894C256004D61CD /* Janet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668602F92894C256004D61CD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		668602FE2894C256004D61CD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		668603022894C256004D61CD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		668603042894C256004D61CD /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		6686030A2894C256004D61CD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6686030E2894C256004D61CD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		668603102894C256004D61CD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		668603292894C39D004D61CD /* ios-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-bridging-header.h"; sourceTree = "<group>"; };
 		6686032A2894C39D004D61CD /* mac-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mac-bridging-header.h"; sourceTree = "<group>"; };
 		6686032B2894C39E004D61CD /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
 		6686032C2894C39E004D61CD /* janet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = janet.h; sourceTree = "<group>"; };
-		668603332894C3D9004D61CD /* JanetVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanetVM.swift; sourceTree = "<group>"; };
+		668603332894C3D9004D61CD /* JanetRuntime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanetRuntime.swift; sourceTree = "<group>"; };
+		668BFB8E2B139D4B00905F2C /* Janet--iOS--Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Janet--iOS--Info.plist"; sourceTree = "<group>"; };
 		66C52184289764D200A84EFC /* janet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = janet.c; sourceTree = "<group>"; };
 		66CAA3F52B084B7B00A74904 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		66CAA3F72B084BCA00A74904 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -108,22 +100,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		668602F42894C256004D61CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66DC9D042B06E77500D6954A /* SwiftTerm in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		668602FB2894C256004D61CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668603072894C256004D61CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,9 +110,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		665EB1712B48688B004FF162 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				665EB1722B4868AA004FF162 /* JanetFunction.swift */,
+				665EB1742B486BC8004FF162 /* Alert.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		668602E42894C254004D61CD = {
 			isa = PBXGroup;
 			children = (
+				668BFB8E2B139D4B00905F2C /* Janet--iOS--Info.plist */,
 				668603292894C39D004D61CD /* ios-bridging-header.h */,
 				6686032A2894C39D004D61CD /* mac-bridging-header.h */,
 				66CAA3FC2B084CF100A74904 /* TreeSitter */,
@@ -152,12 +139,13 @@
 		668602E92894C254004D61CD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				665EB1712B48688B004FF162 /* Functions */,
 				66CAA3F92B084C7400A74904 /* Editor */,
 				66CAA3F42B084B6F00A74904 /* Data */,
 				668602EA2894C254004D61CD /* JanetApp.swift */,
+				66CAA4332B08506F00A74904 /* FileListView.swift */,
 				668602EB2894C254004D61CD /* MainView.swift */,
 				668602EC2894C256004D61CD /* Assets.xcassets */,
-				66CAA4332B08506F00A74904 /* FileListView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -166,9 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				668602F12894C256004D61CD /* Janet.app */,
-				668602F72894C256004D61CD /* Janet.app */,
 				668602FE2894C256004D61CD /* Tests iOS.xctest */,
-				6686030A2894C256004D61CD /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,7 +207,9 @@
 		668603322894C3D0004D61CD /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				668603332894C3D9004D61CD /* JanetVM.swift */,
+				668603332894C3D9004D61CD /* JanetRuntime.swift */,
+				665EB1762B4877AF004FF162 /* functions.h */,
+				665EB1772B4877AF004FF162 /* functions.c */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -327,26 +315,6 @@
 			productReference = 668602F12894C256004D61CD /* Janet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		668602F62894C256004D61CD /* Janet (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6686031D2894C256004D61CD /* Build configuration list for PBXNativeTarget "Janet (macOS)" */;
-			buildPhases = (
-				668602F32894C256004D61CD /* Sources */,
-				668602F42894C256004D61CD /* Frameworks */,
-				668602F52894C256004D61CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Janet (macOS)";
-			packageProductDependencies = (
-				66DC9D032B06E77500D6954A /* SwiftTerm */,
-			);
-			productName = "Janet (macOS)";
-			productReference = 668602F72894C256004D61CD /* Janet.app */;
-			productType = "com.apple.product-type.application";
-		};
 		668602FD2894C256004D61CD /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 668603202894C256004D61CD /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -365,24 +333,6 @@
 			productReference = 668602FE2894C256004D61CD /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		668603092894C256004D61CD /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 668603232894C256004D61CD /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				668603062894C256004D61CD /* Sources */,
-				668603072894C256004D61CD /* Frameworks */,
-				668603082894C256004D61CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6686030C2894C256004D61CD /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 6686030A2894C256004D61CD /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -397,17 +347,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 						LastSwiftMigration = 1340;
 					};
-					668602F62894C256004D61CD = {
-						CreatedOnToolsVersion = 13.4.1;
-						LastSwiftMigration = 1340;
-					};
 					668602FD2894C256004D61CD = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 668602F02894C256004D61CD;
-					};
-					668603092894C256004D61CD = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 668602F62894C256004D61CD;
 					};
 				};
 			};
@@ -430,9 +372,7 @@
 			projectRoot = "";
 			targets = (
 				668602F02894C256004D61CD /* Janet (iOS) */,
-				668602F62894C256004D61CD /* Janet (macOS) */,
 				668602FD2894C256004D61CD /* Tests iOS */,
-				668603092894C256004D61CD /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -445,27 +385,13 @@
 				66CAA40F2B084DE400A74904 /* grammar.json in Resources */,
 				66CAA4022B084DDB00A74904 /* highlights.scm in Resources */,
 				668603162894C256004D61CD /* Assets.xcassets in Resources */,
+				668BFB8F2B139D4B00905F2C /* Janet--iOS--Info.plist in Resources */,
 				66CAA4032B084DDB00A74904 /* locals.scm in Resources */,
 				66CAA40E2B084DE400A74904 /* node-types.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		668602F52894C256004D61CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668603172894C256004D61CD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		668602FC2894C256004D61CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668603082894C256004D61CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,11 +406,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66CAA4342B08506F00A74904 /* FileListView.swift in Sources */,
+				665EB1782B4877AF004FF162 /* functions.c in Sources */,
 				66CAA40D2B084DE400A74904 /* scanner.c in Sources */,
 				66CAA4102B084DE400A74904 /* parser.c in Sources */,
+				665EB1752B486BC8004FF162 /* Alert.swift in Sources */,
 				66C52185289764D200A84EFC /* janet.c in Sources */,
 				66CAA4302B084E1300A74904 /* PlainTextTheme.swift in Sources */,
 				66CAA3F62B084B7B00A74904 /* FileManager.swift in Sources */,
+				665EB1732B4868AA004FF162 /* JanetFunction.swift in Sources */,
 				668603142894C256004D61CD /* MainView.swift in Sources */,
 				66CAA4322B084E5A00A74904 /* HighlightName.swift in Sources */,
 				66CAA3FB2B084CBE00A74904 /* EditorView.swift in Sources */,
@@ -493,18 +422,7 @@
 				66CAA42E2B084E1300A74904 /* TomorrowTheme.swift in Sources */,
 				668603122894C256004D61CD /* JanetApp.swift in Sources */,
 				66CAA42F2B084E1300A74904 /* Base.swift in Sources */,
-				668603342894C3D9004D61CD /* JanetVM.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668602F32894C256004D61CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66C52186289764D200A84EFC /* janet.c in Sources */,
-				668603152894C256004D61CD /* MainView.swift in Sources */,
-				668603132894C256004D61CD /* JanetApp.swift in Sources */,
-				668603352894C3D9004D61CD /* JanetVM.swift in Sources */,
+				668603342894C3D9004D61CD /* JanetRuntime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,15 +435,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		668603062894C256004D61CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668603112894C256004D61CD /* Tests_macOSLaunchTests.swift in Sources */,
-				6686030F2894C256004D61CD /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -533,11 +442,6 @@
 			isa = PBXTargetDependency;
 			target = 668602F02894C256004D61CD /* Janet (iOS) */;
 			targetProxy = 668602FF2894C256004D61CD /* PBXContainerItemProxy */;
-		};
-		6686030C2894C256004D61CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 668602F62894C256004D61CD /* Janet (macOS) */;
-			targetProxy = 6686030B2894C256004D61CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -662,6 +566,7 @@
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Janet--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -695,6 +600,7 @@
 				DEVELOPMENT_TEAM = 5P2L88KTNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Janet--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -714,67 +620,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6686031E2894C256004D61CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P2L88KTNE;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.bitcreative.Janet;
-				PRODUCT_NAME = Janet;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Janet/mac-bridging-header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		6686031F2894C256004D61CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P2L88KTNE;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.bitcreative.Janet;
-				PRODUCT_NAME = Janet;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Janet/mac-bridging-header.h";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -819,44 +664,6 @@
 			};
 			name = Release;
 		};
-		668603242894C256004D61CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P2L88KTNE;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.bitcreative.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Janet (macOS)";
-			};
-			name = Debug;
-		};
-		668603252894C256004D61CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P2L88KTNE;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.bitcreative.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Janet (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -878,29 +685,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6686031D2894C256004D61CD /* Build configuration list for PBXNativeTarget "Janet (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6686031E2894C256004D61CD /* Debug */,
-				6686031F2894C256004D61CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		668603202894C256004D61CD /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				668603212894C256004D61CD /* Debug */,
 				668603222894C256004D61CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		668603232894C256004D61CD /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				668603242894C256004D61CD /* Debug */,
-				668603252894C256004D61CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -946,11 +735,6 @@
 			productName = Disk;
 		};
 		66DC9D012B06E77100D6954A /* SwiftTerm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */;
-			productName = SwiftTerm;
-		};
-		66DC9D032B06E77500D6954A /* SwiftTerm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 66DC9CFF2B06E76600D6954A /* XCRemoteSwiftPackageReference "SwiftTerm" */;
 			productName = SwiftTerm;

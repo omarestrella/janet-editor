@@ -3,6 +3,7 @@
 //
 
 #import "Janet/Sources/janet.h"
+#import "Janet/Bridge/functions.h"
 #import "TreeSitter/Sources/public.h"
 
 typedef Janet CJanet;

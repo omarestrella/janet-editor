@@ -11,8 +11,6 @@ import SwiftUI
 class AppModel: ObservableObject {
   @Published var activeColumn: NavigationSplitViewVisibility = .doubleColumn
 
-  internal let fileManager = FileManager()
-
   var isEditorFullscreen: Bool {
     activeColumn == .detailOnly
   }
@@ -23,23 +21,24 @@ class AppModel: ObservableObject {
 
   // MARK: Janet
 
-  @Published var results: [Janet] = []
+  var runtime = JanetRuntime()
 
-  var vm = JanetVM()
-
-  func runCode(code: String) {
-    DispatchQueue.global().async {
-      guard let result = self.vm.run(source: code) else { return }
-
-      DispatchQueue.main.sync {
-        self.results.append(result)
-      }
-    }
+  func runCode(code: String) -> Janet? {
+    runtime.run(source: code)
   }
 
   // MARK: File management
+  
+  internal let fileManager = FileManager()
 
-  @Published var activeFile: File?
+  @Published var activeDocument: JanetDocument?
+  @Published var fileTree: [FileTreeItem] = []
+  
+  convenience init(fileTree: [FileTreeItem]) {
+    self.init()
+    
+    self.fileTree = fileTree
+  }
 
   func createFile(_ contents: String, filename: String) {
     do {
@@ -48,8 +47,25 @@ class AppModel: ObservableObject {
       print(error)
     }
   }
+  
+  func deleteFile(_ item: JanetDocument) {
+    do {
+      try fileManager.deleteFile(item)
+      loadFiles()
+    } catch {
+      print(error)
+    }
+  }
+  
+  func deleteItem(_ item: FileTreeItem) {
+    do {
+      try fileManager.deleteItem(item)
+    } catch {
+      print(error)
+    }
+  }
 
-  func getFiles() -> [File] {
-    fileManager.getFiles()
+  func loadFiles() {
+    fileTree = fileManager.getFileTree()
   }
 }

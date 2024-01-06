@@ -75,31 +75,15 @@ struct FileEditor: UIViewRepresentable {
 }
 
 struct EditorView: View {
-  @EnvironmentObject var appModel: AppModel
-  
-  @State var file: File
-
-  @State var editorText = ""
+  var document: JanetDocument
 
   var body: some View {
     HStack {
-      FileEditor(text: $editorText)
+      FileEditor(text: contents)
     }
-    .onAppear {
-      editorText = file.contents
-    }
-    .toolbar(content: {
-      ToolbarItem(placement: .principal, content: {
-        Text(file.name)
-      })
-
-      ToolbarItem(placement: .primaryAction, content: {
-        Button(action: {
-          appModel.runCode(code: editorText)
-        }, label: {
-          Label("Run", systemImage: "play.fill")
-        })
-      })
-    })
+  }
+  
+  var contents: Binding<String> {
+    .init(get: { document.contents }, set: { document.contents = $0 })
   }
 }
